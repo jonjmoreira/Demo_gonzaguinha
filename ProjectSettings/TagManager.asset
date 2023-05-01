@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - teste
+  - Player
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Terrain
+    uniqueID: 2781459017
+    locked: 0
+  - name: Characters
+    uniqueID: 2087435351
     locked: 0
