@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public int damage = 10;
+    private int damage;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        PlayerHealth PlayerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-        
-        if (PlayerHealth != null)
-        {
-            PlayerHealth.TakeDamage(damage);
-        }
+
+      damage = Random.Range( 10, 30 );
+      PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+      
+      if (playerHealth != null)
+      {
+          playerHealth.TakeDamage(damage);
+      }
     }
 }
